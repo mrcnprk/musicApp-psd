@@ -1,0 +1,330 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+body {
+	background: url(../img/Layer_5.png);
+	background-repeat: repeat-x;
+	color: #2e66b2;
+	font-family: Montserrat, sans-serif;
+	font-weight: 400;
+	line-height: 2.5em;
+	font-size: 14px;
+	letter-spacing: 0.28px;
+}
+
+a {
+	text-decoration: none;
+	color: #2e66b2;
+}
+
+ul {
+	list-style: none;
+}
+
+h1, h2, h3 {
+	color: #ffffff;
+}
+
+.button {
+	border: 2px solid #153b6d;
+	border-radius: 40px;
+}
+
+.button a {
+	display: block;
+	color: #ffffff;
+	text-align: center;
+	padding: 10px 50px;
+}
+
+.containter {
+	max-width: 2000px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* header */
+
+.pageheader {
+	display: flex;
+	flex-direction: column;
+	max-width: 1180px;
+	width: 100%;	
+	margin: 0 auto;
+}
+
+.pageheader .pagenav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 40px;
+}
+
+.pagenav .brand {
+	display: flex;
+	align-items: center;
+}
+
+.brand p {
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 30px;
+}
+
+.brand img {
+	margin-right: 17px;
+}
+
+.pageheader .title {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+	.brandnameintext {
+	color: #2e66b2;
+}
+
+.infographic {
+	background: url(../img/Vector_Smart_Object_copy.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+}
+
+.infographic img {
+	max-width: 1371px;
+	width: 100%;
+	height: auto;
+,}
+
+/* moreinfo */
+
+.moreinfo {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.moreinfo .text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 730px;
+	width: auto;
+	height: auto;
+	margin: 0 auto;
+}
+
+/* Features */
+
+.title {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.Features .appinfo {
+	display: flex;
+	align-items: center;
+	max-width: 1500px;
+	margin: 0 auto;
+}
+
+.Features .appinfo .Speaker,
+.Features .appinfo .Headphones {
+	padding-bottom: 30px;
+}
+
+.Features .appinfo .phonebox {
+	position: relative;
+	margin: 0 15px;
+}
+
+.Features .appinfo .ellipse {
+	position: absolute;
+	bottom: 175px;
+	left: -25px;
+	z-index: -1;
+}
+
+.Features .appinfo .ellipse2 {
+	position: absolute;
+	bottom: 200px;
+	left: 90px;
+	width: 75%;
+	z-index: -1;
+}
+
+.Features .appinfo .leftinfo {
+	text-align: right;
+}
+
+/* Feature perspective */
+
+.Featuresperspective {
+	display: flex;
+	align-items: center;
+	position: relative;
+	height: 710px;
+}
+
+.Featuresperspective .graphic {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+} 
+
+.Featuresperspective .text {
+	position: absolute;
+	right: 1060px;
+	max-width: 640px;
+	margin-left: 30px;
+}
+
+/* Photo */
+
+.Photo {
+	background: url(../img/Layer_11.png);
+	height: 586px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.Photo h3 {
+	text-align: center;
+}
+
+.Photo .authorinfo {
+	display: flex;
+	align-items: center;
+	margin: 85px 0;
+}
+
+.Photo .authorinfo img {
+	margin-right: 15px;
+}
+
+/* Download */
+
+.download {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 150px;
+}
+
+.download .sectiontitle {
+	text-align: center;
+	max-width: 650px;
+}
+
+.download .pics {
+	background: url('../img/Warstwa_4_copy.png') no-repeat right, url('../img/Warstwa_3_copy.png') no-repeat left;
+}
+
+/* footer */
+
+.pagefooter {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1180px;
+	margin: 0 auto;
+	padding: 0 40px;
+}
+.pagefooter ul {
+	padding: 0;
+}
+
+.pagefooter ul li {
+	display: inline-block;
+}
+
+.pagefooter ul li a {
+	display: block;
+	padding: 0 15px;
+}
+
+@media (max-width: 1439px) {
+	
+/* appinfo */ 
+	
+.appinfo {
+	flex-direction: column;
+	position: relative;
+	}
+	
+.Features .appinfo .rightinfo {
+	position: absolute;
+	top: 50px;
+	right: 30px;
+	width: 45%;
+	text-align: center;
+	}
+	
+.Features .appinfo .leftinfo {
+	position: absolute;
+	top: 50px;
+	left: 30px;
+	width: 45%;
+	text-align: center;
+	}
+	
+	.appinfo {
+		height: 800px;
+	}
+	
+	.phonebox img {
+		display: none;
+	}
+	
+	/* Featuresperspective */
+	
+	.Featuresperspective {
+		height: auto;
+	}
+	
+	.Featuresperspective .text {
+		position: static;
+		padding-top: 850px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	
+.moreinfo {
+		display: block;
+		padding: 100px 0 150px 0;
+	}
+	
+}
+
+@media (max-width: 848px) {
+
+		
+	.moreinfo img {
+			width: 100%;
+			height: auto;
+	}
+	
+	.phonebox {
+		padding-top: 150px;
+	}
+	
+	.download .pics {
+		background: none;
+	}
+	
+	.download .pics img {
+		width: 100%;
+		height: auto;
+	}
+	
+	.pagefooter {
+		flex-direction: column;	
+	}
+}
